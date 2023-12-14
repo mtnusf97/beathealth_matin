@@ -16,8 +16,6 @@ warnings.filterwarnings("ignore")
 
 
 def run_linear_regression(X, y, test_size):
-    X_train, _X_val, y_train, _y_val = train_test_split(X, y, test_size=29)
-    X_val, X_test, y_val, y_test = train_test_split(_X_val, _y_val, test_size=10)
 
     X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=test_size)
     model = LinearRegression().fit(X_train, y_train)
